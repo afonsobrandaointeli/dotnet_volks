@@ -7,7 +7,6 @@ on:
   pull_request:
     branches:
       - main
-
 jobs:
   build:
     name: "Build"
@@ -27,7 +26,6 @@ jobs:
 
     - name: "Build api"  
       run: dotnet build --configuration Release
-
   deploy:
     name: Deploy
 #    needs: quality_code
